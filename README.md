@@ -13,3 +13,9 @@
 ## Abstract
 
   In this paper I am applied a diagonal inflated biviriate poisson as well as a simple staking model whereby evaluate the efficiency of odds price offered by 29 sports bookmakers. Finally I get a breakdown profit & lose table. While I used **Kelly model**^[Refer to [Testing Inefficiency of Sports-Bookmakers by Kelly Model](https://github.com/Scibrokes/Kelly-Criterion)] next to this research which generated a profit every year.
+
+## Full Version Thesis
+
+  The research on the soccer odds modelling, result prediction, staking as well as the return ot investment is applicable to real life.
+
+[Odds Modelling and Testing Inefficiency of Sports-Bookmakers.pdf](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/Odds%20Modelling%20and%20Testing%20Inefficiency%20of%20Sports-Bookmakers/Odds_Modelling_and_Testing_Inefficiency_of_Sports-Bookmakers.pdf)

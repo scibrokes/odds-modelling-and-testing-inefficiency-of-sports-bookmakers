@@ -68,23 +68,23 @@ Don't use markdown, instead use the more precise latex commands:
 
 **Bivariate Poisson regression models**
 
-![Bivariate Poisson regression models](http://i.imgur.com/LAmZtNR.png?1)
+![Bivariate Poisson regression models](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/figure/1-bp.png?raw=true)
 
   From above formula, bivariate poisson basically measure the correlationship between *X* and *Y* compare to double poisson models. However, as I mentioned which is *Dixon & Coles 1996* modified a little on the score 0-0, 1-0, 1-1 and vice versa.
 \bigbreak
 
-![Double Poisson regression models](http://i.imgur.com/Ce1722h.png?1)
+![Double Poisson regression models](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/figure/2-cov.png?raw=true)
 
   A Double poisson model can be easily applied by generalized linear model. The covariates is a constant parameter across all soccer matches or teams as we know from figure 2.
 \bigbreak
 
 **Diagonal Inflated Bivariate Poisson regression models**
 
-![Diagonal Inflated Bivariate Poisson regression models](http://i.imgur.com/V3HdJob.png?1)
+![Diagonal Inflated Bivariate Poisson regression models](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/figure/3-dbp.png?raw=true)
 
   Since the bivariate is not accurate enough and applicable to predict the real life soccer result. *Karlis & Ntzuofras 2005* introduced a more complicated model which able to inflated the probabilities of the occurrance on draw games.
 
-![Skellam's Distribution for Football Scores](http://i.imgur.com/4JsIc0v.png?1)
+![Skellam's Distribution for Football Scores](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/figure/4-sd.png?raw=true)
 
   Well, when we talk about the parameter to measure the correlationship. How can we know what models might fit into it? *Karlis & Ntzuofras 2005* has compare few models which are :
   
@@ -99,7 +99,7 @@ Don't use markdown, instead use the more precise latex commands:
   There has a popular quote in sportsbook betting industry which is term as `FORM`. There is a flutuation of the ability and aggresiveness on sports competition as time goes by. Lets review the *Dixon & Coles 1996* model and fit the decay parameter into our basic model.
 \bigbreak
 
-![decay rates](http://i.imgur.com/BlCL74o.png?1)
+![decay rates](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/figure/5-df.png?raw=true)
 
   After simulation, I get a decay rate which is almost `0.0065` and similar with *Dixon & Coles 1996*. However, due to I consider the soccer matches has come out result once the whistle is blew. Therefore I've tried to build another model which is similar with Weibull model to make the decay rate flexible compare to constantly annum. few models, which are:
   
@@ -168,16 +168,16 @@ Sys.info()
 
 ## Reference
 
-1. [**Modelling association football scores** *1982 by M.J Maher*]()
-2. [**Modelling Association Football Scores and Inefficiencies in the Football Betting Market.** *1996 by Mark Dixon and Stuart Coles*]()
-3. [**A Birth Process Model for Association Football Matches.** *1997 by Mark Dixon and Michael Robinson*]()
-4. [**Dynamic Modelling and Prediction of English Football League Matches for Betting.** *2002 by Martin Crowder, Mark Dixon, Anthony Ledford and Mike Robinson*]()
-5. [**The value of statistical forecasts in the UK association football betting market.** *2004 by Mark Dixon and Peter Pope*]()
-6. [**Statistical Modelling for Soccer Games: The Greek League.** *1998 by Dimitris Karlis and Ioannis Ntzoufras*]()
-7. [**Bayesian modelling of football outcomes (using Skellam’s Distribution).** *2007 by Dimitris Karlis and Ioannis Ntzoufras*]()
-8. [**Bivariate Poisson and Diagonal Inflated Bivariate Poisson Regression Models in R.** *2005 by Dimitris Karlis and Ioannis Ntzoufras*]()
-9. [**John Goddard and Ioannis Asimakopoulos** *2004 by John Goddard and Ioannis Asimakopoulos*]()
-10. [**Statistical Methodology for Profitable Sports Gambling** *2012 by Fabián Enrique Moya*]()
+1. [**Modelling association football scores** *1982 by M.J Maher*](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/reference/Maher1982.pdf)
+2. [**Modelling Association Football Scores and Inefficiencies in the Football Betting Market.** *1996 by Mark Dixon and Stuart Coles*](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/reference/DixonColes1996.pdf)
+3. [**A Birth Process Model for Association Football Matches.** *1997 by Mark Dixon and Michael Robinson*](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/reference/DixonRobinson1997.pdf)
+4. [**Dynamic Modelling and Prediction of English Football League Matches for Betting.** *2002 by Martin Crowder, Mark Dixon, Anthony Ledford and Mike Robinson*](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/reference/DixonLedfordRobinson2001.pdf)
+5. [**The value of statistical forecasts in the UK association football betting market.** *2004 by Mark Dixon and Peter Pope*](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/reference/DixonPope2004.pdf)
+6. [**Statistical Modelling for Soccer Games: The Greek League.** *1998 by Dimitris Karlis and Ioannis Ntzoufras*](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/reference/KarlisNtzoufras1998.pdf)
+7. [**Bayesian modelling of football outcomes (using Skellam’s Distribution).** *2007 by Dimitris Karlis and Ioannis Ntzoufras*](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/reference/KarlisNtzoufras2007.pdf)
+8. [**Bivariate Poisson and Diagonal Inflated Bivariate Poisson Regression Models in R.** *2005 by Dimitris Karlis and Ioannis Ntzoufras*](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/reference/KarlisNtzoufras2005.pdf)
+9. [**John Goddard and Ioannis Asimakopoulos** *2004 by John Goddard and Ioannis Asimakopoulos*](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/reference/GoddardAsimakopoulos2004.pdf)
+10. [**Statistical Methodology for Profitable Sports Gambling** *2012 by Fabián Enrique Moya*](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/reference/Moya2012.pdf)
 
 
 
