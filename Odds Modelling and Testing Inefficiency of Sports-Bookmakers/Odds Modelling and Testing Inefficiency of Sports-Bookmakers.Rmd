@@ -16,7 +16,7 @@ title:
   # For running headers, if needed
   short:     "\\pkg{Rmodel}: Odds Modelling and Testing Inefficiency of Sports Bookmakers"
 abstract: >
-  In this paper I am applied a diagonal inflated biviriate poisson as well as a simple staking model whereby evaluate the efficiency of odds price offered by 29 sports bookmakers. Finally I get a breakdown profit & lose table. While I used Kelly model next to this research which generated a profit every year.
+  In this paper I am applied a diagonal inflated biviriate poisson as well as a simple staking model whereby evaluate the efficiency of odds price of Asian Handicap and Goal Line offered by 40 sports bookmakers. Finally I get a breakdown profit & lose table. While I used Kelly model next to this research which generated a profit every year.
 keywords:
   # at least one keyword must be supplied
   formatted: [keywords, Bivariate poisson, Multivariate discrete model, Betting strategy, Soccer, English Premier League, Expected return, Maximum likelihood, Statistical forecast, Bookmakers, "\\proglang{R}", "\\proglang{Excel}"]
@@ -41,14 +41,6 @@ output: rticles::jss_article
   The latest research paper wrote by Dixon is that *Dixon & Pope 2004* which have reviewed the previous model and testing the efficiency on correct score of 3 major firms in UK. *Karlis & Ntzuofras 2007* make a summary of evolution on his research which is apply Skellam's distribution on bivariate poisson model to resolve the obstacle of draw games.
 \bigbreak
   Section 2 discribe a statiscal model applicable to soccer odds modelling. Section 3 talk about the dataset while section 4 model focus on staking model. Section 5 present the result and last section conclude.
-
-## Code formatting
-
-Don't use markdown, instead use the more precise latex commands:
-
-* \proglang{Java}
-* \pkg{plyr}
-* \code{print("1+2")}
 
 # Modelling
 
@@ -103,8 +95,9 @@ Don't use markdown, instead use the more precise latex commands:
 
   After simulation, I get a decay rate which is almost `0.0065` and similar with *Dixon & Coles 1996*. However, due to I consider the soccer matches has come out result once the whistle is blew. Therefore I've tried to build another model which is similar with Weibull model to make the decay rate flexible compare to constantly annum. few models, which are:
   
-  - Count in the soccer result once a soccer match is finished to get a dynamic decay rates.
+  - Count in the soccer result once a soccer match is finished to get a dynamic decay rates to refresh next prediction odds price.
   - Follow *Dixon & Coles 1996* which taken a constant decay rates for a soccer session.
+  - Count in the soccer result once a week to get a weekly dynamic decay rates to predict next week soccer matches.
 
   I got a vector of decay rates around `0.0045` with the standard deviation not more than 1~10%. which is similar with the model at [MatchOdds.org](http://matchodds.org).
 
@@ -112,26 +105,169 @@ Don't use markdown, instead use the more precise latex commands:
 
 ## Soccer Sports Dataset
 
+1) test the efficieny of 29 bookmakers' Asian Handicap prices						
+2) comparison between EM model, observations/outcome, and also pure probabilities of products offered by 29 bookmakers						
+3) 29 bookmakers exclude below 11 companies:						
+     i) bwin			vi) Intralot			xi) Coral
+    ii) Interwetten			vii) SNAI			
+   iii) William Hill			viii) SingaporePools			
+   iv) SSP International			 ix) Stan James			
+    v) Betfair			  x) Unibet			
 
 
 ## Odds Price Dataset
 
-  I manually copy and paste the odds price from [500Wan.com](). You are feel free to browse over the dataset via [200611 EngAllOdds](200611 EngAllOdds)^[The spreadsheet file locate inside my previous project which is [**Odds Modelling and Testing Inefficiency of Sports-Bookmakers** *2008-2010 by ®yo Eng Lian Hu*](https://www.dropbox.com/home/Research%20Project%202).]
+  In order to test the efifciency of my model. I took quite long time period^[After I completed the odds modelling part. took time more than 10 hours per day and around half year time manually copy and paste the odds price (soccer matches data, all events in all English 9 leagues + cups as well as all Japanese leagues and tournaments for both prematch as well as the rebirth modelling, and also testing staking model's purpose)] to gather data from below websites. You are feel free to browse over the dataset via [200611 EngAllOdds](200611 EngAllOdds)^[The spreadsheet file locate inside the [dataset](https://www.dropbox.com/home/Research%20Project%202) of **Odds Modelling and Testing Inefficiency of Sports-Bookmakers** *2008-2010 by ®yo Eng Lian Hu* to see the odds price of every single soccer match.]
 
-# Staking Model
+**Data source** :
 
-## Betting Strategies
+1. the soccer matches and also Asian Handicap odds prices of 29 bookmakers getting from 3 websites below:	
+	- <http://www.500wan.com>
+	- <http://www.bet007.com>
+	- <http://www.nowgoal.com>
+	
+2. English soccer leagues from 2006/07 to 2010/11 collected as my sample data, which are include:	
+   - 1) English Premier League	
+   - 2) English League Championship	
+   - 3) English Division 1	
+   - 4) English Division 2	
+   - 5) English FA Cup	
+   - 6) English League Cup	
+   - 7) English League Trophy	
+   - 8) English FA Trophy / English Challenge Cup	
+	
+3. Season 2006/07 and 2007/08 used for EM model, however odds price of only seasons 2008/09 and 2009/10 gathered and use for testing efficieny.	
+   - there are 4389 soccer matches used as sample in our research.	
+   - unfortunately, odds prices of around 10 to 20 soccer matches inside research works have no data source.	
+   - open prices and closed prices collected but only open prices get into research works.	
 
-  As I mentioned in section [Model Enhancement] on the decay rates. In order to test the efficiency and the return of investment, I've taken both models in algorithmic simulations.
+## Convertion to Odds Price
+
+**Odds Price based on Pure Probabilities**
+
+![odds price with vigorish](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/figure/6-odds.png?raw=true)
+
+  From above description we know the bookmakers has charges a certain spread margin / overounds / vigorish.
+
+**Odds Price based with Vigorish**
+
+  Therefore we need to convert to a net probabilities without vigorish to compare with our time series diagonal inflation bivariate poisson regression model.
+
+**Remarks** : you are feel free to browse over [dataset](https://www.dropbox.com/home/Research%20Project%202) of **Odds Modelling and Testing Inefficiency of Sports-Bookmakers** *2008-2010 by ®yo Eng Lian Hu* to observe the EM odds, odds price offered by bookmakers without vigorish as well as with vigorish for every single soccer match. Total soccer matches in this research project has 4389 across 8 leagues + tournaments in England.
+
+# Betting Strategies
+
+## Comparison of Efficiency of the Models
+
+  By refer to *Dixon & Pope 2004*, before we start build our staking model, we try to summarize the statistical prices offered by 40 sports bookmakers on both Asian Handicap and Goal Line.
+
+**Research AH (PureProb)**
+
+![Summary of Odds Price in Season 2008/09~2009/10](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/figure/7-AHppCP0810.png?raw=true)
+
+![Summary of Odds Price in Season 2008/09](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/figure/7-AHppCP0809.png?raw=true)
+
+![Summary of Odds Price in Season 2009/10](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/figure/7-AHppCP0910.png?raw=true)
+
+**Research AH (OddsProb)**
+
+![Summary of Odds Price in Season 2008/09~2009/10](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/figure/7-AHopCP0810.png?raw=true)
+
+![Summary of Odds Price in Season 2008/09](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/figure/7-AHopCP0809.png?raw=true)
+
+![Summary of Odds Price in Season 2009/10](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/figure/7-AHopCP0910.png?raw=true)
+
+**Research OU (PureProb)**
+
+![Summary of Odds Price in Season 2008/09~2009/10](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/figure/7-OUppCP0810.png?raw=true)
+
+![Summary of Odds Price in Season 2008/09](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/figure/7-OUppCP0809.png?raw=true)
+
+![Summary of Odds Price in Season 2009/10](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/figure/7-OUppCP0910.png?raw=true)
+
+**Research OU (OddsProb)**
+
+![Summary of Odds Price in Season 2008/09~2009/10](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/figure/7-OUopCP0810.png?raw=true)
+
+![Summary of Odds Price in Season 2008/09](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/figure/7-OUopCP0809.png?raw=true)
+
+![Summary of Odds Price in Season 2009/10](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/figure/7-OUopCP0910.png?raw=true)
+
+## Staking Model
+
+  As I mentioned in section [Model Enhancement] on the decay rates. In order to test the efficiency and the return of investment, I've taken both models in *algorithmic simulations*^[I tried to fit the constant decay rates, weekly dynamical decay rates and dynamical decat rates just right after finish a soccer match. It is my previous research saved in Rmodel.RData files prior to start this spreadsheet. Therefore this spreadsheet only taken the compleleted and converted odds price for staking and testing efficiency purpose.]. For the staking model, I just simply using the most simple staking model which from *Dixon & Coles 1996*.
+\bigbreak
+  
+  Only $1 One dollar placed on every level of edge from 1.00 until 4.00. Below
+
+![A sample of edge value and staking breakdown table](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/figure/8-staking-edge.png?raw=true)
+
+  Below table is another sample breakdown table which showing the handicap breakdown and odds price breakdown in:-
+  
+  - stake amount
+  - staking ratio
+  - profit & lose
+  - profit and lose ratio
+
+![A sample of staking breakdown table](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/figure/8-staking-breakdown.png?raw=true)
 
 ## Preview of Returns.
 
+  Below tables breakdown the stakes and return on every single edge point that overcame the overrounds.
+
+**Research AH (PureProb)**
+
+![Summary of Return in Season 2008/09~2009/10](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/figure/7-AHppSM0810.png?raw=true)
+
+![Summary of Return in Season 2008/09](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/figure/7-AHppSM0809.png?raw=true)
+
+![Summary of Return in Season 2009/10](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/figure/7-AHppSM0910.png?raw=true)
+
+**Research AH (OddsProb)**
+
+![Summary of Return in Season 2008/09~2009/10](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/figure/7-AHopSM0810.png?raw=true)
+
+![Summary of Return in Season 2008/09](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/figure/7-AHopSM0809.png?raw=true)
+
+![Summary of Return in Season 2009/10](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/figure/7-AHopSM0910.png?raw=true)
+
+**Research OU (PureProb)**
+
+![Summary of Return in Season 2008/09~2009/10](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/figure/7-OUppSM0810.png?raw=true)
+
+![Summary of Return in Season 2008/09](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/figure/7-OUppSM0809.png?raw=true)
+
+![Summary of Return in Season 2009/10](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/figure/7-OUppSM0910.png?raw=true)
+
+**Research OU (OddsProb)**
+
+![Summary of Return in Season 2008/09~2009/10](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/figure/7-OUopSM0810.png?raw=true)
+
+![Summary of Return in Season 2008/09](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/figure/7-OUopSM0809.png?raw=true)
+
+![Summary of Return in Season 2009/10](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/figure/7-OUopSM0910.png?raw=true)
 
 # Conclusion
 
 ## Conclusion
 
+  This spreadsheet test the efficiency of Asian Handicap odds prices of 29 bookmakers with a scientific betting strategy based on a EM model (Expectation Maximization)									
+Firstly, get the English soccer matches data, then compile odds price based on EM model, based on that model simply placed bets on only when "EM model / Bookmaker's Prob > Ratio".
+
+  From the result of this research on 2 Seasons English Soccer Leagues, we conclude the below points:
+  
+  - proof that nowadays we are hard to make profit from 29 bookmakers based on simple betting strategy (EMProb / BKProb).
+	- there are no Asian Handicap betting models in academics research industry, somemore sophisticated betting model needed.
+	- furthermore, some matches have no odds prices may caused the betting made a lose result.
+	- the most importance point is that bookmakers take a very high advantages which is higher than norminal virogish (refer to application of Malay odds, and also Ryo handicap.xlsx spreadsheet to know the calculation of real vigorish).		
+
 ## Future Works
+
+  I applied **Kelly model**^[Refer to [Testing Inefficiency of Sports-Bookmakers by Kelly Model](https://github.com/Scibrokes/Kelly-Criterion)] next to this research which generated profit (positive return of investment) more than 30% every year.
+\bigbreak
+  While now I am using dataset from European famous sportsbook consultancy firm to test thier staking model and efficiency. Wher I need to modify existing Kelly model to be half, quarter etc to control the risk similar with *Moya 2012*.
+\bigbreak
+  There has a weakness in this paper which is gathered dataset are history odds price while I am learning to build a real time trading system now. However a profit return from my 10 years experience and put my all time and affort in this sportbook research is worthable, happier and stimulated to be more aggresive to continue my journey to setup own hedge fund company **Scibrokes**.
 
 # Appendices
 
@@ -164,7 +300,8 @@ Sys.info()
   Now I would like to share some bloopers during process this thesis.
   
   - **Remarks** : Due to the mathematical LaTeX formula and greek letters unable use in [**rticles** package](https://github.com/rstudio/rticles). Here I forced to use some image for substitution.
-  - Due to the Microsoft Excel file inside my previous project [**Odds Modelling and Testing Inefficiency of Sports-Bookmakers** *2008-2010 by ®yo Eng Lian Hu*](https://www.dropbox.com/home/Research%20Project%202) is very huge. I tried to convert it to pdf format and attached as appendices but system keep endless processing there but no outcome. Secondly, huge dataset make it trouble to read into ®Studio and summarise and plotting.
+  - Due to the Microsoft Excel file inside my previous project [dataset](https://www.dropbox.com/home/Research%20Project%202) for **Odds Modelling and Testing Inefficiency of Sports-Bookmakers** *2008-2010 by ®yo Eng Lian Hu* is very huge in xlsx format and set with a struture frame. Therefore I just omit to apply `openxlsx` to read the data for further process.
+  - I tried to convert the xlxs files to pdf format and attached as appendices but system keep endless processing there but no outcome. Secondly, huge dataset make it trouble to read into ®Studio and summarise and plotting some d3 graphs.
 
 ## Reference
 
