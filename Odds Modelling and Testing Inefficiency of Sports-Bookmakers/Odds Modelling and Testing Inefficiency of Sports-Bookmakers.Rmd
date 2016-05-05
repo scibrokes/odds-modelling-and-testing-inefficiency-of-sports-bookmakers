@@ -1,0 +1,188 @@
+---
+author:
+  - name: ®yo Lian Hu, ENG
+    affiliation: Coursera / Scibrokes®
+    address: >
+      09-11-02, Block Chengal,
+      Taman Desaminium,
+      43300 Seri Kembangan,
+      Selangor, Malaysia.
+    email: englianhu@gmail.com / englianhu@scibrokes.com, +6017-2100905
+    url: https://github.com/scibrokes/owner
+title:
+  formatted: "Odds Modelling and Testing Inefficiency of Sports Bookmakers \\pkg{Rmodel}"
+  # If you use tex in the formatted title, also supply version without
+  plain:     "Odds Modelling and Testing Inefficiency of Sports Bookmakers"
+  # For running headers, if needed
+  short:     "\\pkg{Rmodel}: Odds Modelling and Testing Inefficiency of Sports Bookmakers"
+abstract: >
+  In this paper I am applied a diagonal inflated biviriate poisson as well as a simple staking model whereby evaluate the efficiency of odds price offered by 29 sports bookmakers. Finally I get a breakdown profit & lose table. While I used Kelly model next to this research which generated a profit every year.
+keywords:
+  # at least one keyword must be supplied
+  formatted: [keywords, Bivariate poisson, Multivariate discrete model, Betting strategy, Soccer, English Premier League, Expected return, Maximum likelihood, Statistical forecast, Bookmakers, "\\proglang{R}", "\\proglang{Excel}"]
+  plain:     [keywords, Bivariate poisson, Multivariate discrete model, Betting strategy, Soccer, English Premier League, Expected return, Maximum likelihood, Statistical forecast, Bookmakers, R, Excel]
+preamble: >
+  \usepackage{amsmath}
+output: rticles::jss_article
+---
+
+# Introduction
+
+  The odds modelling in Europe and United States are very popular since decades. However statistical odds modelling and algorithmic staking has not yet popular in Far East Asia.
+\bigbreak
+  By refer to *Dixon & Coles 1996*^[Refer to reference paper 02], *Karlis & Ntzoufras 2005*^[Refer to reference paper 08] and also *Dixon & Pope 2004*^[Refer to reference paper 05] I tried to collect soccer data from year 2006 to 2011. The purpose of the research is testing the inefficiency of soccer odds offered by 29 bookmakers as well as making profit from bookmakers.
+\bigbreak
+  The paper *Dixon & Coles 1996* inspired by the *Maher 1982*^[Refer to reference paper 01] to identify the offence and defence index of every single team where *Karlis & Ntzoufras 2005* enahanced to be more complicated model. *Moya 2012*^[Refer to reference paper 10] taken 40000 customers' data from bwin to analayse and profit and lose and applied diversified staking strategies to make profit from bookmakers. *Goddard 2004*^[Refer to reference paper 09] model an ordered probit regression and placed stkes on English soccer leagues from 1998 to 2002 and finally yeild `1998/99` = 0.116, `1999/00` = 0.008, `2000/01` = -0.008, `2001/02` = 0.160.
+\bigbreak
+  Well, *Dixon & Robinson 1997*^[Refer to reference paper 03] has built a rebirth model on 90 minutes In-Play soccer gaming. *Crowder, Dixon, Anthony & Robinson 2001*^[Refer to reference paper 04] applied MCMC^[Markov Chain Monte Carlo model] model for soccer result prediction and do a comparison with previous *Dixon & Coles 1996* model where concludes that previous model forecast more precisely.
+\bigbreak
+  Similar with *Dixon & Coles 1996*, *Karlis & Ntzuofras 1998*^[Refer to reference paper 06] has encountered an issue which is a number of nil-nil tied games. while *Dixon & Coles 1996* applied an inflation on low scores games while *Karlis & Ntzoufras 2005* built an extra distribution parameter to settle it.
+\bigbreak
+  The latest research paper wrote by Dixon is that *Dixon & Pope 2004* which have reviewed the previous model and testing the efficiency on correct score of 3 major firms in UK. *Karlis & Ntzuofras 2007* make a summary of evolution on his research which is apply Skellam's distribution on bivariate poisson model to resolve the obstacle of draw games.
+\bigbreak
+  Section 2 discribe a statiscal model applicable to soccer odds modelling. Section 3 talk about the dataset while section 4 model focus on staking model. Section 5 present the result and last section conclude.
+
+## Code formatting
+
+Don't use markdown, instead use the more precise latex commands:
+
+* \proglang{Java}
+* \pkg{plyr}
+* \code{print("1+2")}
+
+# Modelling
+
+## Basic Model
+
+  As mentioned in *Karlis & Ntzuofras 2005*, bivariate Poisson models are appropriate for modeling paired count data exhibiting correlation. Paired count data arise in a wide context including:
+  
+  - marketing (number of purchases of different products)
+  - epidemiology (incidents of different diseases in a series of districts)
+  - accident analysis (number of accidents in a site before and after infrastructure changes)
+  - medical research (the number of seizures before and after treatment)
+  - sports (the number of goals scored by each one of the two opponent teams in soccer)
+  - econometrics (number of voluntary and involuntary job changes)
+
+  Where I just to name a few among the use.
+\bigbreak
+
+**Bivariate Poisson regression models**
+
+![Bivariate Poisson regression models](http://i.imgur.com/LAmZtNR.png?1)
+
+  From above formula, bivariate poisson basically measure the correlationship between *X* and *Y* compare to double poisson models. However, as I mentioned which is *Dixon & Coles 1996* modified a little on the score 0-0, 1-0, 1-1 and vice versa.
+\bigbreak
+
+![Double Poisson regression models](http://i.imgur.com/Ce1722h.png?1)
+
+  A Double poisson model can be easily applied by generalized linear model. The covariates is a constant parameter across all soccer matches or teams as we know from figure 2.
+\bigbreak
+
+**Diagonal Inflated Bivariate Poisson regression models**
+
+![Diagonal Inflated Bivariate Poisson regression models](http://i.imgur.com/V3HdJob.png?1)
+
+  Since the bivariate is not accurate enough and applicable to predict the real life soccer result. *Karlis & Ntzuofras 2005* introduced a more complicated model which able to inflated the probabilities of the occurrance on draw games.
+
+![Skellam's Distribution for Football Scores](http://i.imgur.com/4JsIc0v.png?1)
+
+  Well, when we talk about the parameter to measure the correlationship. How can we know what models might fit into it? *Karlis & Ntzuofras 2005* has compare few models which are :
+  
+  - Discrete distribution (with an adjustable paramters)
+  - Poisson distribution
+  - Geometric distribution
+
+  They built 12 statistical models to compare and get the best fit model. For more details kindly refer to the paper.
+
+## Model Enhancement
+
+  There has a popular quote in sportsbook betting industry which is term as `FORM`. There is a flutuation of the ability and aggresiveness on sports competition as time goes by. Lets review the *Dixon & Coles 1996* model and fit the decay parameter into our basic model.
+\bigbreak
+
+![decay rates](http://i.imgur.com/BlCL74o.png?1)
+
+  After simulation, I get a decay rate which is almost `0.0065` and similar with *Dixon & Coles 1996*. However, due to I consider the soccer matches has come out result once the whistle is blew. Therefore I've tried to build another model which is similar with Weibull model to make the decay rate flexible compare to constantly annum. few models, which are:
+  
+  - Count in the soccer result once a soccer match is finished to get a dynamic decay rates.
+  - Follow *Dixon & Coles 1996* which taken a constant decay rates for a soccer session.
+
+  I got a vector of decay rates around `0.0045` with the standard deviation not more than 1~10%. which is similar with the model at [MatchOdds.org](http://matchodds.org).
+
+# Data
+
+## Soccer Sports Dataset
+
+
+
+## Odds Price Dataset
+
+  I manually copy and paste the odds price from [500Wan.com](). You are feel free to browse over the dataset via [200611 EngAllOdds](200611 EngAllOdds)^[The spreadsheet file locate inside my previous project which is [**Odds Modelling and Testing Inefficiency of Sports-Bookmakers** *2008-2010 by ®yo Eng Lian Hu*](https://www.dropbox.com/home/Research%20Project%202).]
+
+# Staking Model
+
+## Betting Strategies
+
+  As I mentioned in section [Model Enhancement] on the decay rates. In order to test the efficiency and the return of investment, I've taken both models in algorithmic simulations.
+
+## Preview of Returns.
+
+
+# Conclusion
+
+## Conclusion
+
+## Future Works
+
+# Appendices
+
+## Documenting File Creation
+
+  It's useful to record some information about how your file was created.
+  
+  - File creation date: 2016-05-06
+  - `r R.version.string`
+  - R version (short form): `r getRversion()`
+  - [**rticles** package](https://github.com/rstudio/rticles) version: `r packageVersion('rticles')`
+  - File version: 1.0.0
+  - File latest updated date: `r Sys.Date()`
+  - Author Profile: [®yo, Eng Lian Hu](https://beta.rstudioconnect.com/englianhu/ryo-eng/)
+  - GitHub: [Source Code](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers)
+  - Additional session information
+  
+```{r info, echo=FALSE, results='asis'}
+lubridate::now()
+devtools::session_info()$platform
+Sys.info()
+```
+
+## Speech and Blooper
+
+  Firstly I do appreciate those who shade me a light on my research. Meanwhile I do happy and learn from the research. I do appreciated to take some spared time to write this thesis where the research has start from 2008 and finish in 2012. Infact I've finished my research on 2010 before I wrote a proposal to acquire the [Ladbrokes](http://www.ladbrokesplc.com/)^[Ladbrokes is a world leader in the betting and gaming industry with over 2,700 betting outlets in the UK, Ireland, Belgium and Spain and over 800,000 active online customers. British public listed company which in the Fortune 500 and over hundred years business group.] trading and hedge fund project in Scicom (MSC) Bhd and extended dataset soccer matches until 2012. Unfortunately the project has closed but I keep up learning journey to run my own company [Scibrokes](https://github.com/scibrokes/owner)^[A registered company but not yet in operation. A prospective statistical hedge fund company.] some other days. I'll started work as customer service executive but in somewhere else next week, I am currently studying distance course data science at [Coursera.org](http://www.coursera.org). You are feel free to browse over my CV at [®yo Eng Lian Hu](https://beta.rstudioconnect.com/englianhu/ryo-eng/).
+\bigbreak
+  I started my research journey when I decided to resign from Caspo Inc. to be an customer service operator in Scicom (MSC) Bhd. I've search, collected and read through thousands of research papers to get the applicable model in our real life investment. Fortunately I found and know a person [Boffins -vs- Bookies (The Man Who Broke the World Leading Bookmakers)](https://englianhu.wordpress.com/sportsbook/boffins-vs-bookies-the-man-who-broke-the-world-leading-bookmakers/) and start my learning from an outsider which don't know any statistical tools for modelling until successfully completed the research in year 2012. Kindly refer to [My personal WordPress blog](https://englianhu.wordpress.com/) for more experience and bloopers.
+\bigbreak
+  Now I would like to share some bloopers during process this thesis.
+  
+  - **Remarks** : Due to the mathematical LaTeX formula and greek letters unable use in [**rticles** package](https://github.com/rstudio/rticles). Here I forced to use some image for substitution.
+  - Due to the Microsoft Excel file inside my previous project [**Odds Modelling and Testing Inefficiency of Sports-Bookmakers** *2008-2010 by ®yo Eng Lian Hu*](https://www.dropbox.com/home/Research%20Project%202) is very huge. I tried to convert it to pdf format and attached as appendices but system keep endless processing there but no outcome. Secondly, huge dataset make it trouble to read into ®Studio and summarise and plotting.
+
+## Reference
+
+1. [**Modelling association football scores** *1982 by M.J Maher*]()
+2. [**Modelling Association Football Scores and Inefficiencies in the Football Betting Market.** *1996 by Mark Dixon and Stuart Coles*]()
+3. [**A Birth Process Model for Association Football Matches.** *1997 by Mark Dixon and Michael Robinson*]()
+4. [**Dynamic Modelling and Prediction of English Football League Matches for Betting.** *2002 by Martin Crowder, Mark Dixon, Anthony Ledford and Mike Robinson*]()
+5. [**The value of statistical forecasts in the UK association football betting market.** *2004 by Mark Dixon and Peter Pope*]()
+6. [**Statistical Modelling for Soccer Games: The Greek League.** *1998 by Dimitris Karlis and Ioannis Ntzoufras*]()
+7. [**Bayesian modelling of football outcomes (using Skellam’s Distribution).** *2007 by Dimitris Karlis and Ioannis Ntzoufras*]()
+8. [**Bivariate Poisson and Diagonal Inflated Bivariate Poisson Regression Models in R.** *2005 by Dimitris Karlis and Ioannis Ntzoufras*]()
+9. [**John Goddard and Ioannis Asimakopoulos** *2004 by John Goddard and Ioannis Asimakopoulos*]()
+10. [**Statistical Methodology for Profitable Sports Gambling** *2012 by Fabián Enrique Moya*]()
+
+
+
+
+
+
+
+
