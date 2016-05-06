@@ -289,18 +289,18 @@ output: rticles::jss_article
 \bigbreak
 
 ![Summary of Return in Season 2008/09~2009/10](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/figure/7-AHppSM0810.png?raw=true)
-
 \\
+
   Above figure shows a staking breakdown on every single edge on Asian Handicap odds price without vigorish of total soccer matches in season 2008/09 and 2009/10.
 
 ![Summary of Return in Season 2008/09](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/figure/7-AHppSM0809.png?raw=true)
-
 \\
+
   Above figure shows a staking breakdown on every single edge on Asian Handicap odds price without vigorish of total soccer matches in season 2008/09.
 
 ![Summary of Return in Season 2009/10](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/figure/7-AHppSM0910.png?raw=true)
-
 \\
+
   Above figure shows a staking breakdown on every single edge on Asian Handicap odds price without vigorish of total soccer matches in season 2009/10.
 \bigbreak
 
@@ -308,18 +308,18 @@ output: rticles::jss_article
 \bigbreak
 
 ![Summary of Return in Season 2008/09~2009/10](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/figure/7-AHopSM0810.png?raw=true)
-
 \\
+
   Above figure shows a staking breakdown on every single edge on Asian Handicap odds price with vigorish of total soccer matches in season 2008/09 and 2009/10.
 
 ![Summary of Return in Season 2008/09](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/figure/7-AHopSM0809.png?raw=true)
-
 \\
+
   Above figure shows a staking breakdown on every single edge on Asian Handicap odds price with vigorish of total soccer matches in season 2008/09.
 
 ![Summary of Return in Season 2009/10](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/figure/7-AHopSM0910.png?raw=true)
-
 \\
+
   Above figure shows a staking breakdown on every single edge on Asian Handicap odds price with vigorish of total soccer matches in season 2009/10.
 \bigbreak
 
@@ -327,18 +327,18 @@ output: rticles::jss_article
 \bigbreak
 
 ![Summary of Return in Season 2008/09~2009/10](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/figure/7-OUppSM0810.png?raw=true)
-
 \\
+
   Above figure shows a staking breakdown on every single edge on Goal Line odds price without vigorish of total soccer matches in season 2008/09 and 2009/10.
 
 ![Summary of Return in Season 2008/09](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/figure/7-OUppSM0809.png?raw=true)
-
 \\
+
   Above figure shows a staking breakdown on every single edge on Goal Line odds price without vigorish of total soccer matches in season 2008/09.
 
 ![Summary of Return in Season 2009/10](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/figure/7-OUppSM0910.png?raw=true)
-
 \\
+
   Above figure shows a staking breakdown on every single edge on Goal Line odds price without vigorish of total soccer matches in season 2009/10.
 \bigbreak
 
@@ -346,18 +346,18 @@ output: rticles::jss_article
 \bigbreak
 
 ![Summary of Return in Season 2008/09~2009/10](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/figure/7-OUopSM0810.png?raw=true)
-
 \\
+
   Above figure shows a staking breakdown on every single edge on Goal Line odds price with vigorish of total soccer matches in season 2008/09 and 2009/10.
 
 ![Summary of Return in Season 2008/09](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/figure/7-OUopSM0809.png?raw=true)
-
 \\
+
   Above figure shows a staking breakdown on every single edge on Goal Line odds price with vigorish of total soccer matches in season 2008/09.
 
 ![Summary of Return in Season 2009/10](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/figure/7-OUopSM0910.png?raw=true)
-
 \\
+
   Above figure shows a staking breakdown on every single edge on Goal Line odds price with vigorish of total soccer matches in season 2009/10.
 
 # Conclusion
