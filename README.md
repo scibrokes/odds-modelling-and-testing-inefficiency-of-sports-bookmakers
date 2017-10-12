@@ -19,9 +19,7 @@
 
   The research on the soccer odds modelling, result prediction, staking as well as the return of investment is applicable to real life. Kindly refer to [Odds Modelling and Testing Inefficiency of Sports-Bookmakers.pdf](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/Odds%20Modelling%20and%20Testing%20Inefficiency%20of%20Sports-Bookmakers/Odds_Modelling_and_Testing_Inefficiency_of_Sports-Bookmakers.pdf) to view the paper.
 
-<iframe src="https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/Odds%20Modelling%20and%20Testing%20Inefficiency%20of%20Sports-Bookmakers/Odds_Modelling_and_Testing_Inefficiency_of_Sports-Bookmakers.pdf" style="width:650px; height:500px;" frameborder="0"></iframe>
-
-<iframe width="650" height="500" src="//e.issuu.com/embed.html#24685247/38057010" frameborder="0" allowfullscreen></iframe>
+<iframe src="https://raw.githubusercontent.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/master/Odds%20Modelling%20and%20Testing%20Inefficiency%20of%20Sports-Bookmakers.pdf" width="700px" height="500px" frameborder="0" scrolling="no"> </iframe>
 
   Kindly refer to [*Odds Modelling and Testing Inefficiency of Sports-Bookmakers*](http://issuu.com/englianhu/docs/odds_modelling_and_testing_ineffici?e=24685247/38057010) to read the embed online read mode pdf version.
 
