@@ -57,6 +57,12 @@ devtools::install_github('englianhu/Rmodel')
 9. [**John Goddard and Ioannis Asimakopoulos** *2004 by John Goddard and Ioannis Asimakopoulos*](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/reference/GoddardAsimakopoulos2004.pdf)
 10. [**Statistical Methodology for Profitable Sports Gambling** *2012 by Fabián Enrique Moya*](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/reference/Moya2012.pdf)
 
+---
+
+By the way, you are feel free to surf over [Bookdown contest submission: Odds Modelling and Testing Inefficiency of Sports Bookmakers](https://community.rstudio.com/t/bookdown-contest-submission-odds-modelling-and-testing-inefficiency-of-sports-bookmakers/13889) or []()
+
+---
+
 ## 3. Odds Modelling Version II
 
   In my previous [Betting-Strategy-and-Model-Validation](https://github.com/scibrokes/betting-strategy-and-model-validation), I enhanced my *Rmodel* and test the return of investment. Here I collect the odds price trends of bookmakers and directly fit into calculation as refer to *Niko (2006)*.
