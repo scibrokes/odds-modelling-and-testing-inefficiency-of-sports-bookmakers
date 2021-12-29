@@ -20,7 +20,7 @@ Similar with [`fbRanks`](https://cran.r-project.org/web/packages/fbRanks/index.h
 
 There are some functions from modelling, database management to staking. You are feel free to browse over source code via [`Rmodel`](https://github.com/englianhu/Rmodel) r package. However, I wish to refer to [`QuantTools`](https://cran.r-project.org/web/packages/QuantTools/index.html) r package and write a real-time price trends database for quantitative trading.
 
-```{r}
+```r
 if(!require('devtools') install.packages('devtools'))
 devtools::install_github('englianhu/Rmodel')
 ```
@@ -96,4 +96,4 @@ In my previous [Betting-Strategy-and-Model-Validation](https://github.com/scibro
 
 ---
 
-**Powered by - Copyright© Intellectual Property Rights of <img src='figure/oda-army.jpg' width='24'> [Scibrokes®](http://www.scibrokes.com)**
+<span style='color:RoyalBlue'>**Powered by - Copyright® Intellectual Property Rights of [<img src="figure/Scibrokes.png" width="14"/> Sςιβrοκεrs Trαdιηg®](http://www.scibrokes.com) 個人の経営企業**</span>
