@@ -1,11 +1,12 @@
-# Odds Modelling and Testing Inefficiency of Sports Bookmakers
+# 赔率建模与测试低效率的体育博彩庄家（英）
 
-## Summary during Conducting the Project
+## 科研项目总结
 
-*Apr-2008 to Apr-2010*
+*二零零八年四月 至 二零一零年四月*
+
 **Odds Modelling and Testing Inefficiency of Sports-Bookmakers**
 
-- Learn RExcel, CrystalBall, ModelRisk etc. and choose R open source software to start my research.
+- 学习并使用电子表格的RExcel、CrystalBall、ModelRisk等附属计数/机数软件，然后选择并开始自修R鄀计数/机数编程开源软件和科研项目。
 - Collect the livescore and also 1x2, Asian Handicap, Over Under odds price data of 29 sportsbookmakers manually from 500WAN, BET007 and NowGoal website and filter the odds price data from 2006 to 2011.
 - Apply Poisson model in R to test the return of the investment. This research job is the most completed, success and the first research which write the whole odds compilation EM model and data management by refer to thousands of research papers in sportsbook odds modelling after resigned from Caspo Inc.
 
