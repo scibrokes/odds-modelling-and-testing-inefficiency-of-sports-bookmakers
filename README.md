@@ -7,7 +7,7 @@
 **Odds Modelling and Testing Inefficiency of Sports-Bookmakers**
 
 - 学习并使用电子表格的RExcel、CrystalBall、ModelRisk等附属计数/机数软件，然后选择并开始自修R鄀计数/机数编程开源软件和科研项目。
-- Collect the livescore and also 1x2, Asian Handicap, Over Under odds price data of 29 sportsbookmakers manually from 500WAN, BET007 and NowGoal website and filter the odds price data from 2006 to 2011.
+- 手动从伍佰万（500WAN）、博彩零零七（BET007）、进球网（Nowgoal）采撷廿九家即时比分、欧赔（赢和输/赢平输/胜和负/胜平负）、亚赔、大小数据Collect the livescore and also 1x2, Asian Handicap, Over Under odds price data of 29 sportsbookmakers manually from 500WAN, BET007 and NowGoal website and filter the odds price data from 2006 to 2011.
 - Apply Poisson model in R to test the return of the investment. This research job is the most completed, success and the first research which write the whole odds compilation EM model and data management by refer to thousands of research papers in sportsbook odds modelling after resigned from Caspo Inc.
 
 Similar with [`fbRanks`](https://cran.r-project.org/web/packages/fbRanks/index.html) r package where I used to simulate few years ago via [**Dixon & Coles 1996** *by englianhu (2014)*](https://rpubs.com/englianhu/Dixon-Coles1996). You might refer to the author's blog [LastPlanet Soccer Ranking](http://lastplanetranking.blogspot.com/p/frontpage_5.html). Meanwhile, my package includes not only the 1x2 but all possible products includes : 
