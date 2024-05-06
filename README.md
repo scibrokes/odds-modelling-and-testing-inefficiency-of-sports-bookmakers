@@ -8,18 +8,18 @@
 
 - 学习并使用电子表格的RExcel、CrystalBall、ModelRisk等附属计数/机数软件，然后选择并开始自修R鄀计数/机数编程开源软件和科研项目。
 - 手动从伍佰万（500WAN）、博彩零零七（BET007）、进球网（Nowgoal）采撷天下权威的廿九家博彩公司即时比分、欧赔（赢和输/赢平输/胜和负/胜平负）、亚赔、大小数据，采撷从二零零六年到二零一一年的赔率数据，将赔率转化为净占卜值，再通过好几种比率（尚未着手去筹算，当赔率越来越小的时候，误差会越来越大，有空才学习数值论去筹算加权指数）去添加价差/抽佣加以转化为一般上市场上博彩公司所开出的赔率。
-- 借鉴**迪克逊与克尔斯（一九九六）**，通过泊松计数/机数尤物筹算出概率占卜值后转化为净赔率，再通过价差来评估天下权威的廿九家博彩公司的误差比率与误差值，回测出比博彩庄还精准的计数/机数尤物来挣取利润。也就是所谓的量化对冲基金的基本计数/机数尤物。此科研作品算是挺完善和成功的科学研究，也是我第一个科研作品与文献/论文，从客世博离职回国后开始着手科研，阅读几乎上百至千篇科研论文中千篇一律的论文中筛选出最可行的计数/机数尤物，从简单的数据管理和极大似然估计筹算出赔率。
+- 借鉴**棣逊与克尔斯（一九九六∙英）**，通过泊松计数/机数尤物筹算出概率占卜值后转化为净赔率，再通过价差来评估天下权威的廿九家博彩公司的误差比率与误差值，回测出比博彩庄还精准的计数/机数尤物来挣取利润。也就是所谓的量化对冲基金的基本计数/机数尤物。此科研作品算是挺完善和成功的科学研究，也是我第一个科研作品与文献/论文，从客世博离职回国后开始着手科研，阅读几乎上百至千篇科研论文中千篇一律的论文中筛选出最可行的计数/机数尤物，从简单的数据管理和极大似然估计筹算出赔率。
 
-Similar with [`fbRanks`](https://cran.r-project.org/web/packages/fbRanks/index.html) r package where I used to simulate few years ago via [**Dixon & Coles 1996** *by englianhu (2014)*](https://rpubs.com/englianhu/Dixon-Coles1996). You might refer to the author's blog [LastPlanet Soccer Ranking](http://lastplanetranking.blogspot.com/p/frontpage_5.html). Meanwhile, my package includes not only the 1x2 but all possible products includes : 
+此外，[`fbRanks`](https://cran.r-project.org/web/packages/fbRanks/index.html)鄀计数|机数编程包与蔽包`RModel`的科研路线相似，回测足球彩券的比分、赔率与占卜精准度[**迪逊与克尔斯（一九九六∙英）** *赢家黄氏江夏堂联富，雷欧（二零一四）著*](https://rpubs.com/englianhu/Dixon-Coles1996)，欲知更多详情可查阅[LastPlanet Soccer Ranking](http://lastplanetranking.blogspot.com/p/frontpage_5.html)，同时.敝包`RModel`不仅包含欧赔（赢和输、胜平负）还包含其它产品，请查阅以下列表：
 
-- 1x2 (Both 1st-Half and Full Time)
-- Asian Handicap (Both 1st-Half and Full Time)
-- Over Under (Both 1st-Half and Full Time)
-- Correct Score (Both 1st-Half and Full Time)
-- Odd Even (Both 1st-Half and Full Time)
-- Half-Time/Full-Time (Both 1st-Half and Full Time)
+- 欧赔（赢和输、胜平负）
+- 亚赔（包含上半场与全场）
+- 大小（包含上半场与全场）
+- 正确比分（包含上半场与全场）
+- 单双（包含上半场与全场）
+- 半全场（包含上半场与全场）
 
-There are some functions from modelling, database management to staking. You are feel free to browse over source code via [`Rmodel`](https://github.com/englianhu/Rmodel) r package. However, I wish to refer to [`QuantTools`](https://cran.r-project.org/web/packages/QuantTools/index.html) r package and write a real-time price trends database for quantitative trading.
+数据管理、概率与赔率计数|机数建模、占卜计数|机数建模与投注函数、There are some functions from modelling, database management to staking. You are feel free to browse over source code via [`Rmodel`](https://github.com/englianhu/Rmodel) r package. However, I wish to refer to [`QuantTools`](https://cran.r-project.org/web/packages/QuantTools/index.html) r package and write a real-time price trends database for quantitative trading.
 
 ```r
 if(!require('devtools') install.packages('devtools'))
