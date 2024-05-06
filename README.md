@@ -10,7 +10,7 @@
 - 手动从伍佰万（500WAN）、博彩零零七（BET007）、进球网（Nowgoal）采撷天下权威的廿九家博彩公司即时比分、欧赔（赢和输/赢平输/胜和负/胜平负）、亚赔、大小数据，采撷从二零零六年到二零一一年的赔率数据，将赔率转化为净占卜值，再通过好几种比率（尚未着手去筹算，当赔率越来越小的时候，误差会越来越大，有空才学习数值论去筹算加权指数）去添加价差/抽佣加以转化为一般上市场上博彩公司所开出的赔率。
 - 借鉴**棣逊与克尔斯（一九九六∙英）**，通过泊松计数/机数尤物筹算出概率占卜值后转化为净赔率，再通过价差来评估天下权威的廿九家博彩公司的误差比率与误差值，回测出比博彩庄还精准的计数/机数尤物来挣取利润。也就是所谓的量化对冲基金的基本计数/机数尤物。此科研作品算是挺完善和成功的科学研究，也是我第一个科研作品与文献/论文，从客世博离职回国后开始着手科研，阅读几乎上百至千篇科研论文中千篇一律的论文中筛选出最可行的计数/机数尤物，从简单的数据管理和极大似然估计筹算出赔率。
 
-此外，[`fbRanks`](https://cran.r-project.org/web/packages/fbRanks/index.html)鄀计数|机数编程包与蔽包`RModel`的科研路线相似，回测足球彩券的比分、赔率与占卜精准度[**迪逊与克尔斯（一九九六∙英）** *赢家黄氏江夏堂联富，雷欧（二零一四）著*](https://rpubs.com/englianhu/Dixon-Coles1996)，欲知更多详情可查阅[LastPlanet Soccer Ranking](http://lastplanetranking.blogspot.com/p/frontpage_5.html)，同时.敝包`RModel`不仅包含欧赔（赢和输、胜平负）还包含其它产品，请查阅以下列表：
+此外，[`fbRanks`](https://cran.r-project.org/web/packages/fbRanks/index.html)鄀计数|机数编程包与蔽包`RModel`的科研路线相似，回测足球彩券的比分、赔率与占卜精准度[**迪逊与克尔斯（一九九六∙英）** *赢家黄氏江夏堂联富，雷欧（二零一四）著*](https://rpubs.com/englianhu/Dixon-Coles1996)，欲知更多详情可查阅[LastPlanet Soccer Ranking](http://lastplanetranking.blogspot.com/p/frontpage_5.html)，同时敝包`RModel`不仅包含欧赔（赢和输、胜平负）还包含其它产品，请查阅以下列表：
 
 - 欧赔（赢和输、胜平负）
 - 亚赔（包含上半场与全场）
@@ -41,33 +41,33 @@ devtools::install_github('englianhu/Rmodel')
 
 借鉴古代春秋战国史（公元前七七零年至公元前二二一年），游牧民族匈奴骑在马上得天下，姜太公的大数定律学术份子的赔率计数|机数建模与试探体育彩券商的昏庸、无能、腐败与破绽。
 
-愚生此科研论文应用对角零通膨双变量泊松加权时间序列尤物In this paper I am applied a diagonal inflated biviriate poisson as well as a simple staking model whereby evaluate the efficiency of odds price of Asian Handicap and Goal Line offered by 40 sports bookmakers. Finally I get a breakdown profit & lose table. While I used **Kelly model**^[Refer to [Testing Inefficiency of Sports-Bookmakers by Kelly Model](https://github.com/Scibrokes/Kelly-Criterion)] next to this research which generated profit (positive return of investment) more than 30% every year.
+愚生此科研论文应用对角零通膨双变量泊松加权时间序列尤物和简单的投注计数|机数造物，评估天下诸侯卌霸主体育彩券商的欧赔、亚赔和大小磐上的失误率、低效率性、低学术造诣、昏庸、无能、腐败与破绽。结论上列出每场赛事上投注的注单明细和汇总盈亏表。接下来的科研论文中使用凯利计数|机数编程尤物，年收益超过三成（并且可以每年获得超过三成回酬），详情请查阅[Testing Inefficiency of Sports-Bookmakers by Kelly Model](https://github.com/Scibrokes/Kelly-Criterion)。
 
 ## 二、科研论文全局
 
 ### 第二章第一节、赔率建模/造物（打造尤物）
 
-The research on the soccer odds modelling, result prediction, staking as well as the return of investment is applicable to real life. Kindly refer to [Odds Modelling and Testing Inefficiency of Sports-Bookmakers.pdf](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/Odds%20Modelling%20and%20Testing%20Inefficiency%20of%20Sports-Bookmakers/Odds_Modelling_and_Testing_Inefficiency_of_Sports-Bookmakers.pdf) to view the paper.
+科研足彩计数|机数建模，包括赔率造物、占卜赔率、占卜赛果、投注和回酬率，在现实生活中可行的量化对冲投资计数|机数尤物。，详情请查阅[Odds Modelling and Testing Inefficiency of Sports-Bookmakers.pdf](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/Odds%20Modelling%20and%20Testing%20Inefficiency%20of%20Sports-Bookmakers/Odds_Modelling_and_Testing_Inefficiency_of_Sports-Bookmakers.pdf)。
 
 <iframe src="https://raw.githubusercontent.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/master/Odds%20Modelling%20and%20Testing%20Inefficiency%20of%20Sports-Bookmakers.pdf" width="700px" height="500px" frameborder="0" scrolling="no"> </iframe>
 
-Kindly refer to [*Odds Modelling and Testing Inefficiency of Sports-Bookmakers*](http://issuu.com/englianhu/docs/odds_modelling_and_testing_ineffici?e=24685247/38057010) to read the embed online read mode pdf version.
+至于为学者设计的在线阅读版电子书，请查阅[*Odds Modelling and Testing Inefficiency of Sports-Bookmakers*](http://issuu.com/englianhu/docs/odds_modelling_and_testing_ineffici?e=24685247/38057010)。
 
-- Publised version at [ResearchGate.net](https://www.researchgate.net/publication/303135550_Journal_of_Statistical_Software_Odds_Modelling_and_Testing_Inefficiency_of_Sports_Bookmakers_Rmodel)
-- Embed Read mode version at [Issuu.com](http://issuu.com/englianhu/docs/odds_modelling_and_testing_ineffici?e=24685247/38057010)
+- 发布电子书版，请查阅[研究之门（ResearchGate.net）](https://www.researchgate.net/publication/303135550_Journal_of_Statistical_Software_Odds_Modelling_and_Testing_Inefficiency_of_Sports_Bookmakers_Rmodel)。
+- 内嵌在线阅读版电子书，请查阅[Issuu.com](http://issuu.com/englianhu/docs/odds_modelling_and_testing_ineffici?e=24685247/38057010)。
 
-### 第二章第二节、Betting Strategy
+### 第二章第二节、投注模式/投资战略
 
-Due to my previous research applied \$1 as long as the edge of EM^[Expectation Maximization] odds is over BK^[Odds price offer by Bookmakers] odds and concludes that the staking methods need to be improved.
-  
-Here I tried to scrap the odds price from [7M](http://www.7msport.com/) and [NowGoal.com](http://www.nowgoal.com/) website^[You are feel free to read from [WebDriver-DynamicWebpage-Scrapping.](https://github.com/scibrokes/webdriver-dynamicwebpage-scrapping)], and apply Kelly-Criterion Model, from the simulatioin we can know that the EM model is profitable.
-  
-- [Application of Kelly Criterion model in Sportsbook Investment](https://github.com/scibrokes/kelly-criterion)
-  + [Application of Kelly model in English Soccer session 2011/12](http://rpubs.com/englianhu/kelly_eng1112)
-  + [Application of Kelly model in English Soccer session 2012/13](http://rpubs.com/englianhu/kelly_eng1213)
-- [Betting-Strategy-and-Model-Validation](https://github.com/scibrokes/betting-strategy-and-model-validation)
+由于第一篇科研论文使用一元投注于任何拥有赔率优势的磐口`EM`值（极大似然估计 Expectation Maximization）的赔率超过`BK`值（足彩商家的赔率 Odds price offer by Bookmakers），该论文将投注门槛分别在于，当`EM`值高于`BK`值十点、廿点、卅点、卌点、一成、两成、三成、四成等，就投注一元再评估回酬。而科研论文的结论是投注模式或投资战略需要改进。
 
-### 2.3 Reference
+在此愚生从[7M](http://www.7msport.com)和[NowGoal.com](http://www.nowgoal.com)赔率资讯网上採撷赔率数据，欲知更多详情请查阅[WebDriver-DynamicWebpage-Scrapping.](https://github.com/scibrokes/webdriver-dynamicwebpage-scrapping)并且使用凯利标准计数|机数尤物，从模拟与回测中可以获利超过三成。
+
+- [「猫城」在足彩投注模式|投资战略中，使用凯利标准计数|机数尤物（英）](https://github.com/scibrokes/kelly-criterion)
+  + [在英超二零二一/二零二二年赛季中，使用凯利标准计数|机数尤物（英）](http://rpubs.com/englianhu/kelly_eng1112)
+  + [在英超二零二二/二零二三年赛季中，使用凯利标准计数|机数尤物（英）](http://rpubs.com/englianhu/kelly_eng1213)
+- [「猫城」Betting-Strategy-and-Model-Validation](https://github.com/scibrokes/betting-strategy-and-model-validation)
+
+### 第二章第三节、参考文献
 
 1. [**Modelling association football scores** *1982 by M.J Maher*](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/reference/Maher1982.pdf)
 2. [**Modelling Association Football Scores and Inefficiencies in the Football Betting Market.** *1996 by Mark Dixon and Stuart Coles*](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/reference/DixonColes1996.pdf)
