@@ -88,9 +88,14 @@ devtools::install_github('englianhu/Rmodel')
 
 ## 三、赔率计数|机数造物（第二版）
 
-In my previous [Betting-Strategy-and-Model-Validation](https://github.com/scibrokes/betting-strategy-and-model-validation), I enhanced my *Rmodel* and test the return of investment. Here I collect the odds price trends of bookmakers and directly fit into calculation as refer to *Niko (2006)*.
+根据愚生旧著[「猫城」Betting-Strategy-and-Model-Validation](https://github.com/scibrokes/betting-strategy-and-model-validation)使用凯利标准计数|机数尤物，回酬率比原本的*Rmodel*使用的最基本根据筹算出来的赔率优势，再以每十点一个单位来投注一元来得高，在此採撷足彩商赔率更变的时间序列数据并参照*逆寇（二零零六年∙英）*加以筹算。
 
-*Gianluca Baio & Marta Blangiardo (2010)* introduced a model which is not inferior to the one used by *Karlis & Ntzoufras (2003)*. *Ioannis Ntzoufras (2009)* also using WinBugs for modelling where it (and OpenBugs) are not user friedly.
+**坚卢卡∙拜酉与马耳他∙布兰贾斗（二零一零年）** 介绍一个不逊色（inferior）于**卡尔里斯与猪肉法拉斯（二零零三年）**、**依酉安尼斯∙猪肉法拉斯（二零零九年）** 的计数|机数编程尤物，一样使用WinBugs（在西施康工作期间，自修并比较过，WinBugs软件比OpenBugs软件好使，当时也自修编汇语言、派森与逆向工程破解LeaguePad比分管理软件和一些加密文件和软件）。also using WinBugs for modelling where it (and OpenBugs) are not user friedly.
+
+它日学习投资风险管理与夏普率，欲知更多详情，请查阅：
+
+- [解密复兴科技 - 基于隐蔽马尔科夫模型的时序分析方法](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/世博量化研究院/图书馆/解密复兴科技%20-%20基于隐蔽马尔科夫模型的时序分析方法.pdf)。
+- [解读量化投资 - 西蒙斯用公式打败市场的故事](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/世博量化研究院/图书馆/解读量化投资%20-%20西蒙斯用公式打败市场的故事.pdf)
 
 ### 第三章第一节、混合计数|机数尤物
 
