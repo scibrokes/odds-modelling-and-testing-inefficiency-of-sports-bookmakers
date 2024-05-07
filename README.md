@@ -51,7 +51,7 @@ devtools::install_github('englianhu/Rmodel')
 
 <iframe src="https://raw.githubusercontent.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/master/Odds%20Modelling%20and%20Testing%20Inefficiency%20of%20Sports-Bookmakers.pdf" width="700px" height="500px" frameborder="0" scrolling="no"> </iframe>
 <br><br>
-至于为学者设计的在线阅读版电子书，请查阅[Odds Modelling and Testing Inefficiency of Sports-Bookmakers](http://issuu.com/englianhu/docs/odds_modelling_and_testing_ineffici?e=24685247/38057010)。
+至于为学者设计的在线阅读版电子书，请查阅[Odds Modelling and Testing Inefficiency of Sports-Bookmakers](http://issuu.com/englianhu/docs/odds_modelling_and_testing_ineffici?e=24685247/38057010) 。
 
 - 发布电子书版，请查阅[研究之门（ResearchGate.net）](https://www.researchgate.net/publication/303135550_Journal_of_Statistical_Software_Odds_Modelling_and_Testing_Inefficiency_of_Sports_Bookmakers_Rmodel)。
 - 内嵌在线阅读版电子书，请查阅[Issuu.com](http://issuu.com/englianhu/docs/odds_modelling_and_testing_ineffici?e=24685247/38057010)。
