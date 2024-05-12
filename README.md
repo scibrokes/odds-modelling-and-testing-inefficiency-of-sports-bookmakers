@@ -93,9 +93,9 @@ if(!require('Rmodel')) {
 
 ## 三、赔率计数|机数造物（第二版）
 
-根据愚生旧著[「猫城」Betting-Strategy-and-Model-Validation](https://github.com/scibrokes/betting-strategy-and-model-validation)使用凯利标准计数|机数尤物，回酬率比原本的*Rmodel*使用的最基本根据筹算出来的赔率优势，再以每十点一个单位来投注一元来得高，在此採撷足彩商赔率更变的时间序列数据并参照*逆寇（二零零六年∙英）*加以筹算。
+根据愚生旧著[「猫城」Betting-Strategy-and-Model-Validation](https://github.com/scibrokes/betting-strategy-and-model-validation)使用凯利标准计数|机数尤物，回酬率比原本的*Rmodel*使用的最基本根据筹算出来的赔率优势，再以每十点一个单位来投注一元来得高，在此採撷足彩商赔率更变的时间序列数据并参照**逆寇（二零零六年∙英）** 加以筹算。
 
-**坚卢卡∙拜酉与马耳他∙布兰贾斗（二零一零年）** 介绍一个不逊色（inferior）于**卡尔里斯与猪肉法拉斯（二零零三年）**、**依酉安尼斯∙猪肉法拉斯（二零零九年）** 的计数|机数编程尤物，一样使用WinBugs（在西施康工作期间，自修并比较过，WinBugs软件比OpenBugs软件好使，当时也自修编汇语言、派森与逆向工程破解LeaguePad比分管理软件和一些加密文件和软件）。also using WinBugs for modelling where it (and OpenBugs) are not user friedly.
+**坚卢卡∙拜酉与马耳他∙布兰贾斗（二零一零年∙英）** 介绍一个不逊色（inferior）于**卡尔里斯与猪肉法拉斯（二零零三年∙英）**、**依酉安尼斯∙猪肉法拉斯（二零零九年∙英）** 的计数|机数编程尤物，一样使用WinBugs（在西施康公司工作期间，自修并比较过，WinBugs软件比OpenBugs软件好使，当时也自修编汇语言、派森与逆向工程破解LeaguePad比分管理软件和一些加密文件和软件）。also using WinBugs for modelling where it (and OpenBugs) are not user friedly.
 
 它日学习投资风险管理与夏普率，欲知更多详情，请查阅：
 
