@@ -51,11 +51,11 @@ if(!require('Rmodel')) {
 
 ### 第二章第一节、赔率建模/造物（打造尤物）
 
-科研足彩计数|机数建模，包括赔率造物、占卜赔率、占卜赛果、投注和回酬率，在现实生活中可行的量化对冲投资计数|机数尤物。，详情请查阅[Odds Modelling and Testing Inefficiency of Sports-Bookmakers.pdf](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/Odds%20Modelling%20and%20Testing%20Inefficiency%20of%20Sports-Bookmakers/Odds_Modelling_and_Testing_Inefficiency_of_Sports-Bookmakers.pdf)。
+科研足彩计数|机数建模，包括赔率造物、占卜赔率、占卜赛果、投注和回酬率，在现实生活中可行的量化对冲投资计数|机数尤物。，详情请查阅[「猫城」赔率计数|机数造物（打造尤物）建模与试探体育彩券商的昏庸、无能、腐败与破绽（英）.pdf](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/Odds%20Modelling%20and%20Testing%20Inefficiency%20of%20Sports-Bookmakers/Odds_Modelling_and_Testing_Inefficiency_of_Sports-Bookmakers.pdf)。
 
 <iframe src="https://raw.githubusercontent.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/master/Odds%20Modelling%20and%20Testing%20Inefficiency%20of%20Sports-Bookmakers.pdf" width="700px" height="500px" frameborder="0" scrolling="no"> </iframe>
 <br><br>
-至于为学者设计的在线阅读版电子书，请查阅[Odds Modelling and Testing Inefficiency of Sports-Bookmakers](http://issuu.com/englianhu/docs/odds_modelling_and_testing_ineffici?e=24685247/38057010) 。
+至于为学者设计的在线阅读版电子书，请查阅[「猫城」赔率计数|机数造物（打造尤物）建模与试探体育彩券商的昏庸、无能、腐败与破绽（英）](http://issuu.com/englianhu/docs/odds_modelling_and_testing_ineffici?e=24685247/38057010) 。
 
 - 发布电子书版，请查阅[研究之门（ResearchGate.net）](https://www.researchgate.net/publication/303135550_Journal_of_Statistical_Software_Odds_Modelling_and_Testing_Inefficiency_of_Sports_Bookmakers_Rmodel)。
 - 内嵌在线阅读版电子书，请查阅[Issuu.com](http://issuu.com/englianhu/docs/odds_modelling_and_testing_ineffici?e=24685247/38057010)。
@@ -74,26 +74,26 @@ if(!require('Rmodel')) {
 
 ### 第二章第三节、参考文献
 
-- 一、[**Modelling association football scores** *1982 by M.J Maher*](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/reference/Maher1982.pdf)
-- 二、[**Modelling Association Football Scores and Inefficiencies in the Football Betting Market.** *1996 by Mark Dixon and Stuart Coles*](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/reference/DixonColes1996.pdf)
-- 三、[**A Birth Process Model for Association Football Matches.** *1997 by Mark Dixon and Michael Robinson*](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/reference/DixonRobinson1997.pdf)
-- 四、[**Dynamic Modelling and Prediction of English Football League Matches for Betting.** *2002 by Martin Crowder, Mark Dixon, Anthony Ledford and Mike Robinson*](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/reference/DixonLedfordRobinson2001.pdf)
-- 五、[**The value of statistical forecasts in the UK association football betting market.** *2004 by Mark Dixon and Peter Pope*](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/reference/DixonPope2004.pdf)
-- 六、[**Statistical Modelling for Soccer Games: The Greek League.** *1998 by Dimitris Karlis and Ioannis Ntzoufras*](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/reference/KarlisNtzoufras1998.pdf)
-- 七、[**Bayesian modelling of football outcomes (using Skellam’s Distribution).** *2007 by Dimitris Karlis and Ioannis Ntzoufras*](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/reference/KarlisNtzoufras2007.pdf)
-- 八、[**Bivariate Poisson and Diagonal Inflated Bivariate Poisson Regression Models in R.** *2005 by Dimitris Karlis and Ioannis Ntzoufras*](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/reference/KarlisNtzoufras2005.pdf)
-- 九、[**John Goddard and Ioannis Asimakopoulos** *2004 by John Goddard and Ioannis Asimakopoulos*](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/reference/GoddardAsimakopoulos2004.pdf)
-- 十、[**Statistical Methodology for Profitable Sports Gambling** *2012 by Fabián Enrique Moya*](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/reference/Moya2012.pdf)
+- 一、[**足球球会入球率计数|机数造物（英）Modelling association football scores** *1982 by M.J Maher*](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/图书馆/Maher1982.pdf)
+- 二、[**足球球会入球率和足彩市场中的破绽与低效率（英）Modelling Association Football Scores and Inefficiencies in the Football Betting Market.** *1996 by Mark Dixon and Stuart Coles*](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/图书馆/DixonColes1996.pdf)
+- 三、[**为足球球会赛事而科研的重生过程计数|机数尤物（英）A Birth Process Model for Association Football Matches.** *1997 by Mark Dixon and Michael Robinson*](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/图书馆/DixonRobinson1997.pdf)
+- 四、[**在英超联赛赛事中应用动态计数|机数造物占卜并投注（英）Dynamic Modelling and Prediction of English Football League Matches for Betting.** *2002 by Martin Crowder, Mark Dixon, Anthony Ledford and Mike Robinson*](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/图书馆/DixonLedfordRobinson2001.pdf)
+- 五、[**计数|机数造物占卜在英国足球联赛投注市场中的价值（英）The value of statistical forecasts in the UK association football betting market.** *2004 by Mark Dixon and Peter Pope*](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/图书馆/DixonPope2004.pdf)
+- 六、[**为足球赛事而科研的计数|机数造物——希腊联赛（英）Statistical Modelling for Soccer Games: The Greek League.** *1998 by Dimitris Karlis and Ioannis Ntzoufras*](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/图书馆/KarlisNtzoufras1998.pdf)
+- 七、[**足球赛果的贝叶斯造物（采用斯科伦分布）（英）Bayesian modelling of football outcomes (using Skellam’s Distribution).** *2007 by Dimitris Karlis and Ioannis Ntzoufras*](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/图书馆/KarlisNtzoufras2007.pdf)
+- 八、[**鄀计数|机数编程语言中的双变量泊松和对角通膨双变量泊松线性尤物（英）Bivariate Poisson and Diagonal Inflated Bivariate Poisson Regression Models in R.** *2005 by Dimitris Karlis and Ioannis Ntzoufras*](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/图书馆/KarlisNtzoufras2005.pdf)
+- 九、[**足球赛果与欧赔的效率计数|机数造物（英）Modelling football match results and the efficiency of fixed-odds betting** *2004 by John Goddard and Ioannis Asimakopoulos*](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/图书馆/GoddardAsimakopoulos2004.pdf)
+- 十、[**为体育彩券获利而科研的计数|机数方法（英）Statistical Methodology for Profitable Sports Gambling** *2012 by Fabián Enrique Moya*](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/图书馆/Moya2012.pdf)
 
 ---
 
-除此之外，莘莘学子都可查阅[Bookdown contest submission: Odds Modelling and Testing Inefficiency of Sports Bookmakers](https://community.rstudio.com/t/bookdown-contest-submission-odds-modelling-and-testing-inefficiency-of-sports-bookmakers/13889)或[电子书版本](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/bookdown-contest-submission-odds-modelling-and-testing-inefficiency-of-sports-bookmakers.pdf)以了解科研论文内容。
+除此之外，莘莘学子都可查阅[「鄀客栈」Bookdown竞赛参赛作品：赔率计数|机数造物（打造尤物）建模与试探体育彩券商的昏庸、无能、腐败与破绽（英）](https://community.rstudio.com/t/bookdown-contest-submission-odds-modelling-and-testing-inefficiency-of-sports-bookmakers/13889)或[电子书版本](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/master/bookdown-contest-submission-odds-modelling-and-testing-inefficiency-of-sports-bookmakers.pdf)以了解科研论文内容。
 
 ---
 
 ## 三、赔率计数|机数造物（第二版）
 
-根据愚生旧著[「猫城」Betting-Strategy-and-Model-Validation](https://github.com/scibrokes/betting-strategy-and-model-validation)使用凯利标准计数|机数尤物，回酬率比原本的*Rmodel*使用的最基本根据筹算出来的赔率优势，再以每十点一个单位来投注一元来得高，在此採撷足彩商赔率更变的时间序列数据并参照**逆寇（二零零六年∙英）** 加以筹算。
+根据愚生旧著[「猫城」投注策略|投资战略和计数|机数造物鉴别（英）](https://github.com/scibrokes/betting-strategy-and-model-validation)使用凯利标准计数|机数尤物，回酬率比原本的*Rmodel*使用的最基本根据筹算出来的赔率优势，再以每十点一个单位来投注一元来得高，在此採撷足彩商赔率更变的时间序列数据并参照**逆寇（二零零六年∙英）** 加以筹算。
 
 **坚卢卡∙拜酉与马耳他∙布兰贾斗（二零一零年∙英）** 介绍一个不逊色（inferior）于**卡尔里斯与猪肉法拉斯（二零零三年∙英）**、**依酉安尼斯∙猪肉法拉斯（二零零九年∙英）** 的计数|机数编程尤物，一样使用WinBugs（在西施康公司工作期间，自修并比较过，WinBugs软件比OpenBugs软件好使，当时也自修编汇语言、派森与逆向工程破解LeaguePad比分管理软件和一些加密文件和软件）。also using WinBugs for modelling where it (and OpenBugs) are not user friedly.
 
@@ -113,10 +113,10 @@ if(!require('Rmodel')) {
 
 ### 第三章第三节、参考文献
 
-- 一、[**Creating a Profitable Betting Strategy for Football by Using Statistical Modelling**](https://github.com/scibrokes/betting-strategy-and-model-validation/blob/master/references/Creating%20a%20Profitable%20Betting%20Strategy%20for%20Football%20by%20Using%20Statistical%20Modelling.pdf) *by* [*Niko Marttinen*](https://www.linkedin.com/in/niko-marttinen-7ab18539) *(2006)*
-- 二、[**Bayesian Hierachical Model for the Prediction of Football Results**](https://github.com/scibrokes/betting-strategy-and-model-validation/blob/master/references/Bayesian%20Hierachical%20Model%20for%20the%20Prediction%20of%20Football%20Results.pdf) *by* [*Gianluca Baio & Marta Blangiardo (2010)*](https://www.statslife.org.uk/news/84-significance/authors/1458-gianluca-baio-marta-blangiardo)
-- 三、[**Bayesian Modeling using WinBUGS**](https://github.com/scibrokes/betting-strategy-and-model-validation/blob/master/references/Bayesian%20Modeling%20using%20WinBUGS.pdf) *by* [*Ioannis Ntzoufras (2009)*](http://www2.stat-athens.aueb.gr/~jbn/ntzoufras.html)
-- 四、[**Beating the bookmakers**](https://github.com/scibrokes/betting-strategy-and-model-validation/blob/master/references/Beating%20the%20bookmakers.pdf) *by* *Simon Borøy-Johnsen (2017)*
+- 一、[**通过计数|机数造物在足球中打造一个可获利的投注策略（英）Creating a Profitable Betting Strategy for Football by Using Statistical Modelling**](https://github.com/scibrokes/betting-strategy-and-model-validation/blob/master/图书馆/Creating%20a%20Profitable%20Betting%20Strategy%20for%20Football%20by%20Using%20Statistical%20Modelling.pdf) *by* [*Niko Marttinen*](https://www.linkedin.com/in/niko-marttinen-7ab18539) *(2006)*
+- 二、[**占卜足球赛果的贝叶斯多层次计数|机数尤物（英）Bayesian Hierachical Model for the Prediction of Football Results**](https://github.com/scibrokes/betting-strategy-and-model-validation/blob/master/图书馆/Bayesian%20Hierachical%20Model%20for%20the%20Prediction%20of%20Football%20Results.pdf) *by* [*Gianluca Baio & Marta Blangiardo (2010)*](https://www.statslife.org.uk/news/84-significance/authors/1458-gianluca-baio-marta-blangiardo)
+- 三、[**采用WinBUGS贝叶斯计数|机数造物（英）Bayesian Modeling using WinBUGS**](https://github.com/scibrokes/betting-strategy-and-model-validation/blob/master/图书馆/Bayesian%20Modeling%20using%20WinBUGS.pdf) *by* [*Ioannis Ntzoufras (2009)*](http://www2.stat-athens.aueb.gr/~jbn/ntzoufras.html)
+- 四、[**击垮众多博彩庄（英）Beating the bookmakers**](https://github.com/scibrokes/betting-strategy-and-model-validation/blob/master/图书馆/Beating%20the%20bookmakers.pdf) *by* *Simon Borøy-Johnsen (2017)*
 
 <br><br>
 
