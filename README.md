@@ -99,7 +99,7 @@ if(!require('Rmodel')) {
 
 它日学习投资风险管理与夏普率，欲知更多详情，请查阅：
 
-- [解密复兴科技 - 基于隐蔽马尔科夫模型的时序分析方法](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/世博量化研究院/图书馆/解密复兴科技%20-%20基于隐蔽马尔科夫模型的时序分析方法.pdf)。
+- [解密复兴科技 - 基于隐蔽马尔科夫模型的时序分析方法](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/世博量化研究院/图书馆/解密复兴科技%20-%20基于隐蔽马尔科夫模型的时序分析方法.pdf)
 - [解读量化投资 - 西蒙斯用公式打败市场的故事](https://github.com/scibrokes/odds-modelling-and-testing-inefficiency-of-sports-bookmakers/blob/世博量化研究院/图书馆/解读量化投资%20-%20西蒙斯用公式打败市场的故事.pdf)
 
 ### 第三章第一节、混合计数|机数尤物
