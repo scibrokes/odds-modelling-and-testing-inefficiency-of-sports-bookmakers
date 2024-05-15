@@ -21,7 +21,7 @@
 
 数据管理、概率与赔率计数|机数建模、占卜计数|机数建模与投注等量化对冲相关编程代码函数，欲知更多详情请查阅[`Rmodel`](https://github.com/englianhu/Rmodel)鄀计数|机数编程程序包。它日得参考[`QuantTools`](https://cran.r-project.org/web/packages/QuantTools/index.html)鄀计数|机数编程程序包编写个采撷并储存实时外汇价格的网站与应用，可供科研、回测、占卜的高频量化对冲金融交易。
 
-```{r}
+```r
 ## 倘若程序包尚未安装，自动下载、安装并读取。
 if(!require('Rmodel')) {
   if(!require('devtools')) install.packages('devtools')
@@ -67,8 +67,8 @@ if(!require('Rmodel')) {
 在此愚生从[7M](http://www.7msport.com)和[NowGoal.com](http://www.nowgoal.com)赔率资讯网上自动採撷赔率数据，欲知更多详情请查阅[「猫城」WebDriver-DynamicWebpage-Scrapping](https://github.com/scibrokes/webdriver-dynamicwebpage-scrapping)并且使用凯利标准计数|机数尤物，从模拟与回测天下诸侯霸主主要十三家博彩庄两个赛季中可以获利超过三成。
 
 - [「猫城」在蹴鞠彩券投注策略|投资战略中，采用凯利标准计数|机数尤物（英）](https://github.com/scibrokes/kelly-criterion)
-- [在英超二零二一/二零二二年赛季中，使用凯利标准计数|机数尤物（英）](http://rpubs.com/englianhu/kelly_eng1112)
-- [在英超二零二二/二零二三年赛季中，使用凯利标准计数|机数尤物（英）](http://rpubs.com/englianhu/kelly_eng1213)
+- [「鄀客栈」在英超二零二一/二零二二年赛季中，使用凯利标准计数|机数尤物（英）](http://rpubs.com/englianhu/kelly_eng1112)
+- [「鄀客栈」在英超二零二二/二零二三年赛季中，使用凯利标准计数|机数尤物（英）](http://rpubs.com/englianhu/kelly_eng1213)
 
 欲知更多详情，请查阅[「猫城」投注策略|投资战略和计数|机数造物鉴别（英）](https://github.com/scibrokes/betting-strategy-and-model-validation)。
 
